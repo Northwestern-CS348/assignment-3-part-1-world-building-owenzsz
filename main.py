@@ -3,6 +3,7 @@ import read, copy
 from logical_classes import *
 from kb_and_inference_engine import *
 from game_masters import *
+import pdb
 
 class KBTest(unittest.TestCase):
 
@@ -98,7 +99,7 @@ class KBTest(unittest.TestCase):
             'fact: (movable disk1 peg3 peg2)',
             'fact: (movable disk2 peg2 peg1)',
         ]
-        self.checkMovables(th, expectedMovables)
+        self.checkMovables(th , expectedMovables)
 
     def test06(self):
         th = TowerOfHanoiGame()
